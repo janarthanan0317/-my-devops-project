@@ -1,47 +1,120 @@
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>DevOps Project</title>
+  <title>My DevOps App</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    body {
+      background: linear-gradient(135deg, #0f172a, #1e293b);
+      color: white;
+      text-align: center;
+    }
+
+    header {
+      padding: 40px 20px;
+    }
+
+    h1 {
+      font-size: 3rem;
+      margin-bottom: 10px;
+    }
+
+    p {
+      color: #cbd5f5;
+      font-size: 1.1rem;
+    }
+
+    .container {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      margin-top: 40px;
+      flex-wrap: wrap;
+    }
+
+    .card {
+      background: #1e293b;
+      padding: 25px;
+      border-radius: 15px;
+      width: 260px;
+      box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+      transition: transform 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-10px);
+    }
+
+    .card h3 {
+      margin-bottom: 10px;
+      color: #38bdf8;
+    }
+
+    .btn {
+      margin-top: 40px;
+      display: inline-block;
+      padding: 12px 25px;
+      background: #38bdf8;
+      color: black;
+      border-radius: 25px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    .btn:hover {
+      background: #0ea5e9;
+    }
+
+    footer {
+      margin-top: 60px;
+      padding: 20px;
+      font-size: 0.9rem;
+      color: #94a3b8;
+    }
+  </style>
 </head>
 
 <body>
 
   <header>
     <h1>🚀 My DevOps Project</h1>
-    <p>Auto Deployed using AWS EC2 + Nginx + GitHub Actions</p>
+    <p>Auto-deployed using AWS EC2 + Nginx + GitHub Actions</p>
   </header>
 
-  <section class="container">
-
+  <div class="container">
     <div class="card">
       <h3>⚡ Fast Deployment</h3>
-      <p>Push code and it goes live automatically without manual work.</p>
+      <p>Push code → Automatically deployed to server</p>
     </div>
 
     <div class="card">
-      <h3>☁️ Cloud Hosting</h3>
-      <p>Running on AWS EC2 with a reliable Nginx server.</p>
+      <h3>☁️ AWS Powered</h3>
+      <p>Running live on EC2 with Nginx web server</p>
     </div>
 
     <div class="card">
       <h3>🔁 CI/CD Pipeline</h3>
-      <p>GitHub Actions handles build and deployment seamlessly.</p>
+      <p>GitHub Actions handles everything seamlessly</p>
     </div>
+  </div>
 
-  </section>
-
-  <section class="cta">
-    <h2>🔥 Version 3.0 is Live</h2>
-    <p>Every push automatically updates this website.</p>
-    <a href="#" class="btn">View Project</a>
-  </section>
+  <a href="#" class="btn">🔥 Version 3.0 LIVE</a>
 
   <footer>
-    <p>Built with patience, confusion, and finally success 😌</p>
+    <p>Built by you (finally working) 😌</p>
   </footer>
 
 </body>
 </html>
+```
